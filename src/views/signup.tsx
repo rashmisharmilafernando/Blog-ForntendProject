@@ -1,9 +1,8 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import Input from "../components/input/input";
 
-class Signup extends React.Component<any, any> {
-    render(): React.ReactNode {
+function Signup ():JSX.Element{
+
         return (
             <section className={'flex justify-center items-center p-5'}>
                 <div className={'w-fit p-10 border shadow-xl rounded-xl'}>
@@ -30,12 +29,12 @@ class Signup extends React.Component<any, any> {
                         </div>
 
                         <div className={'m-2'}>
-                        <Input type={'email'} name="email" label="Email" placeholder="Enter your email" optional={false}/>
+                        <Input type={'email'} name="email" label="Email" placeholder="Email" optional={false}/>
                        
                         </div>
 
                         <div className={'m-2'}>
-                        <Input type={'password'} name="password" label="Password" placeholder="Enter your password" optional={false}/>
+                        <Input type={'password'} name="password" label="Password" placeholder="Password" optional={false}/>
                         </div>
                     </div>
 
@@ -50,7 +49,6 @@ class Signup extends React.Component<any, any> {
                 </div>
             </section>
         );
-    }
 
 
 }

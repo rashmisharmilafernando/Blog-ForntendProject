@@ -7,7 +7,7 @@ import Signup from './views/signup.tsx';
 import Editor from './views/editor.tsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-class App extends React.Component<Props, any>{
+class App extends React.Component<any, any>{
 
   render() {
     return (
