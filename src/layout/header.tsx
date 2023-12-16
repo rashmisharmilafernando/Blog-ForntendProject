@@ -13,7 +13,8 @@ class Header extends React.Component<any, any> {
             <li> <Link to="/Home">Articles</Link></li>
             <li>Your Articles</li>
             <li>Write New Article</li>
-            <li>  <Link to="/Login"><b>Create An Account / Login</b></Link></li>
+            <li>  <Link to="/Login"><b>Login</b></Link></li>
+            <li>  <Link to="/Signup"><b>Create Account</b></Link></li>
           </ul>
         </nav>
       </header>

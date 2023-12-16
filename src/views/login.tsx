@@ -6,7 +6,7 @@ class Login extends React.Component<any, any> {
             <section className={'flex justify-center items-center p-5'}>
             <div className={'w-fit p-24 border shadow-xl rounded-xl'}>
     
-              <img src="https://logodix.com/logo/1597040.png" title="logo" alt="logo" className={'w-24 m-auto'}/>
+              <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30164225/572.png" title="logo" alt="logo" className={'w-24 m-auto'}/>
     
               <div className={'text-2xl font-bold text-green-600 text-center mt-5'}>
                 Sign In
