@@ -12,9 +12,9 @@ class Header extends React.Component<any, any> {
           <ul className={'flex gap-[4vw]'}>
             <li> <Link to="/Home">Articles</Link></li>
             <li>Your Articles</li>
-            <li>Write New Article</li>
-            <li>  <Link to="/Login"><b>Login</b></Link></li>
-            <li>  <Link to="/Signup"><b>Create Account</b></Link></li>
+            <li><Link to="/Editor">Write New Article</Link></li>
+            <li><Link to="/Login"><b>Login</b></Link></li>
+            <li><Link to="/Signup"><b>Create Account</b></Link></li>
           </ul>
         </nav>
       </header>
