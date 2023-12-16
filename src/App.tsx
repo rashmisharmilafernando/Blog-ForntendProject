@@ -11,7 +11,6 @@ class App extends React.Component<Props, any>{
   render() {
     return (
       <div>
-      
         <BrowserRouter>
         <Header />
           <Routes>

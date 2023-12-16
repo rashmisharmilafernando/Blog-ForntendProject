@@ -16,27 +16,27 @@ class Signup extends React.Component<any, any> {
                         <div className="flex">
                             <div className={'m-2'}>
                                 <label htmlFor="fname" className={'block'}>First Name<span className="text-red-600">*</span></label>
-                                <input type="test" id="fname" placeholder="First Name" className={'block border border-cyan-300 outline-none focus:border-green-600 h-10 w-full'} />
+                                <input type="test" id="fname" placeholder="First Name" className={'block border border-cyan-300 outline-none focus:border-cyan-600 h-10 w-full'} />
                             </div>
                             <div className={'m-2'}>
                                 <label htmlFor="lname" className={'block'}>Last Name<span className="text-red-600">*</span></label>
-                                <input type="test" id="lname" placeholder="Last Name" className={'block border border-cyan-300 outline-none focus:border-green-600 h-10 w-full'} />
+                                <input type="test" id="lname" placeholder="Last Name" className={'block border border-cyan-300 outline-none focus:border-cyan-600 h-10 w-full'} />
                             </div>
                         </div>
 
                         <div className={'m-2'}>
                             <label htmlFor="username" className={'block'}>Username<span className="text-red-600">*</span></label>
-                            <input type="test" id="username" placeholder="Username" className={'block border border-cyan-300 outline-none focus:border-green-600 h-10 w-full'} />
+                            <input type="test" id="username" placeholder="Username" className={'block border border-cyan-300 outline-none focus:border-cyan-600 h-10 w-full'} />
                         </div>
 
                         <div className={'m-2'}>
                             <label htmlFor="email" className={'block'}>Email<span className="text-red-600">*</span></label>
-                            <input type="email" id="email" placeholder="Email" className={'block border border-cyan-300 outline-none focus:border-green-600 h-10 w-full'} />
+                            <input type="email" id="email" placeholder="Email" className={'block border border-cyan-300 outline-none focus:border-cyan-600 h-10 w-full'} />
                         </div>
 
                         <div className={'m-2'}>
                             <label htmlFor="password" className={'block'}>Password<span className="text-red-600">*</span></label>
-                            <input type="password" id="password" placeholder="Password" className={'block border border-cyan-300 outline-none focus:border-green-600 h-10  w-full'} />
+                            <input type="password" id="password" placeholder="Password" className={'block border border-cyan-300 outline-none focus:border-cyan-600 h-10  w-full'} />
                         </div>
                     </div>
 
@@ -45,7 +45,7 @@ class Signup extends React.Component<any, any> {
                     </div>
 
                     <div className={'text-center mt-5'}>
-                        Do have an account? <Link to={'/signin'}><span className={'text-blue-600 underline'}>Sign in now</span></Link>
+                        Do have an account? <Link to={'/login'}><span className={'text-blue-600 underline'}>Sign in now</span></Link>
                     </div>
 
                 </div>
