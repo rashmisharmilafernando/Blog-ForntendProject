@@ -7,6 +7,10 @@ class Editor extends React.Component<any, any> {
     state = {
         value: ""
     }
+
+    hadleEditer=(html):void=>{
+        this.setState({value:html})
+    }
     render(): React.ReactElement<any, string | React.JSXElementConstructor<any>> | string | number | Iterable<React.ReactNode> | React.ReactPortal | boolean | any | null | undefined {
 
         return (
@@ -20,7 +24,7 @@ class Editor extends React.Component<any, any> {
 
                     {/* Rich Text editor */}
                     <div className={'m-2'}>
-                        <ReactQuill theme="snow" value={this.state.value} onChange={(e) => this.setState({ value: e.target.value })} />
+                        <ReactQuill theme="snow" value={this.state.value} onChange={this.hadleEditer} />
                     </div>
                 </div>
             </section>

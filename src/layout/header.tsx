@@ -11,7 +11,7 @@ class Header extends React.Component<any, any> {
           <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30164225/572.png" title="logo" alt="logo" className={'w-[50px] rounded-full' }/>
           <ul className={'flex gap-[4vw]'}>
             <li> <Link to="/Home">Articles</Link></li>
-            <li>Your Articles</li>
+            <li><Link to="/Myarticle">Your Articles</Link></li>
             <li><Link to="/Editor">Write New Article</Link></li>
             <li><Link to="/Login"><b>Login</b></Link></li>
             <li><Link to="/Signup"><b>Create Account</b></Link></li>
