@@ -1,6 +1,13 @@
 import React from "react";
 import Card from '../components/card/card';
+import axios from 'axios';
 
+
+interface Data {
+  id: number,
+  title: string,
+  body: string
+}
 
 
 
@@ -38,15 +45,31 @@ const data = [
 ];
 class Home extends React.Component<any, any>{
 
-  componentDidMount(): void {
-    fetch('https://jsonplaceholder.typicode.com/posts/1/comments')
-    .then(response=>response.json())
-    .then(result=>{
-      //data
+  state = {
+    data: []
+  }
 
+  
+  fetchData=():void=>{
+
+    // fetch('https://jsonplaceholder.typicode.com/posts')
+    //   .then(response => response.json())
+    //   .then(result => {
+    //     this.setState({ data: result })
+    //     console.log(result)
+    //   }).catch(err => {
+    //     console.log(err)
+    //   })
+
+    axios.get('https://jsonplaceholder.typicode.com/posts').then(response=>{
+      this.setState({data:response.data});
     }).catch(err=>{
-      console.log(err)
+      console.log(err);
     })
+  }
+  componentDidMount(): void {
+    this.fetchData();
+
   }
 
   render() {
@@ -57,8 +80,8 @@ class Home extends React.Component<any, any>{
             className={'grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 w-fit relative m-auto'}>
 
             {
-              data.map((r, index) => {
-                return <Card title={r.title} content={r.content} />
+              this.state.data.map((r: Data, index) => {
+                return <Card title={r.title} content={r.body} />
               })
             }
 

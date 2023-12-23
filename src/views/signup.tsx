@@ -147,7 +147,7 @@ function Signup(this: any): JSX.Element {
                 </div>
 
                 <div className={'text-center mt-5'}>
-                    <button className={'bg-cyan-600 text-white px-5 py-3 hover:bg-cyan-400'} onClick={this.handleLogin} >Sign In</button>
+                    <button className={'bg-cyan-600 text-white px-5 py-3 hover:bg-cyan-400'} onClick={this.headleSignUp} >Sign In</button>
                 </div>
 
                 {
