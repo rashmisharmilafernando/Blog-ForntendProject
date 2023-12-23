@@ -37,6 +37,18 @@ const data = [
   },
 ];
 class Home extends React.Component<any, any>{
+
+  componentDidMount(): void {
+    fetch('https://jsonplaceholder.typicode.com/posts/1/comments')
+    .then(response=>response.json())
+    .then(result=>{
+      //data
+
+    }).catch(err=>{
+      console.log(err)
+    })
+  }
+
   render() {
     return (
       <div>
