@@ -98,6 +98,7 @@ function Login(): JSX.Element {
                         placeholder="Enter your email"
                         optional={false}
                         callBack={handleInput}
+                        value='email'
                     />
 
                     <Input
@@ -107,6 +108,7 @@ function Login(): JSX.Element {
                         placeholder="Enter your password"
                         optional={false}
                         callBack={handleInput}
+                        value='password'
                     />
                 </div>
 

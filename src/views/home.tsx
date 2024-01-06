@@ -52,7 +52,7 @@ function Home(): JSX.Element {
 
         {
           data.map((r: Data, index: number) => {
-            return <Card title={r.title} content={r.body}/>
+            return <Card title={r.title} content={''} />
           })
         }
 

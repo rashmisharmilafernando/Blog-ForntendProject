@@ -92,6 +92,7 @@ function Signup(): JSX.Element {
                             placeholder="First Name"
                             optional={false}
                             callBack={handleInputs}
+                            value="fname"
 
                         />
 
@@ -104,6 +105,7 @@ function Signup(): JSX.Element {
                             placeholder="Last Name"
                             optional={false} 
                             callBack={handleInputs}
+                            value="lname"
                             />
                     </div>
                 </div>
@@ -116,6 +118,7 @@ function Signup(): JSX.Element {
                         placeholder="username"
                         optional={false}
                         callBack={handleInputs}
+                        value="username"
                         />
                 </div>
 
@@ -127,6 +130,7 @@ function Signup(): JSX.Element {
                         placeholder="Email"
                         optional={false} 
                         callBack={handleInputs}
+                        value="email"
                         />
                 </div>
 
@@ -138,6 +142,7 @@ function Signup(): JSX.Element {
                         placeholder="Password"
                         optional={false} 
                         callBack={handleInputs}
+                        value="password"
                         />
                 </div>
             </div>
