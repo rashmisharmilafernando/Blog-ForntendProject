@@ -98,6 +98,7 @@ function Editor(): JSX.Element {
                     placeholder="Enter your Title"
                     optional={true}
                     callBack={handleTitle}
+                    value={article?.title}
 
                 />
 
