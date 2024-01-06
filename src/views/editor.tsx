@@ -5,15 +5,18 @@ import 'react-quill/dist/quill.snow.css';
 import Swal from "sweetalert2";
 import axios from "axios";
 import Cookies from 'js-cookie';
-import {useNavigate} from "react-router-dom";
+import {useLocation, useNavigate} from "react-router-dom";
 
 function Editor(): JSX.Element {
 
    
     const navigate = useNavigate();
+    const location = useLocation();
 
-    const [title, setTitle] = useState<string>("");
-    const [description, setDescription] = useState<string>("");
+    let article = location?.state?.article;
+
+    const [title, setTitle] = useState<string>(article?article.title: "");
+    const [description, setDescription] = useState<string>(article?article.description: "");
 
     useEffect(()=>{
         //get token
@@ -85,7 +88,7 @@ function Editor(): JSX.Element {
         <section className='px-28'>
             <div className={'text-right mt-5'}>
             <button className={'second-btn mr-1'}>Clear</button>
-                <button className={'main-btn ml-1'} onClick={validateSubmission}>Publish</button>
+                <button className={'main-btn ml-1'} onClick={validateSubmission} >{ article? "Update":"Publish"}</button>
             </div>
             <div>
                 <Input

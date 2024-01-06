@@ -117,9 +117,10 @@ const MyArticles = (): JSX.Element => {
                   <td className={'w-[15%]'}>{DateHanlder.formateDate(r.publishedDate)}</td>
                   <td className={'w-[50%]'}>{r.title}</td>
                   <td className={'w-[15%]'}>
-                    <button className={'bg-blue-600 text-white p-3 rounded-full mx-2'}><FaEye /></button>
-                    <button className={'bg-green-600 text-white p-3 rounded-full mx-2'}><FaPen /></button>
-                    <button className={'bg-red-600 text-white p-3 rounded-full mx-2'}><FaTrash /></button>
+                  <button className={'bg-blue-600 text-white p-3 rounded-full mx-2'} onClick={() => navigate('/article', {state: {title: r.title, description: r.description}})}><FaEye /></button>
+                        <button className={'bg-green-600 text-white p-3 rounded-full mx-2'} onClick={() => navigate('/editor', {state: {article: r}})}><FaPen /></button>
+                        <button className={'bg-red-600 text-white p-3 rounded-full mx-2'} onClick={() => deleteArticle(r)}><FaTrash /></button>
+
 
                   </td>
                 </tr>
